@@ -1,0 +1,112 @@
+:root {
+	--yellow: #fcd116;
+	--white: #ffffff;
+	--red: #ce1126;
+	--blue: #0038a8;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.flag {
+	display: grid;
+	grid-template-rows: 50% 50%;
+	border: 2px solid black;
+	width: 900px;
+	height: 450px;
+}
+
+.top {
+	background-color: var(--blue);
+}
+
+.bottom {
+	background-color: var(--red);
+}
+
+.triangle {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 225px 0 225px 389.7px;
+	border-color: transparent transparent transparent var(--white);
+}
+
+.sun {
+	position: absolute;
+	left: 97px;
+	top: 182px;
+	width: 90px;
+	height: 90px;
+	background-color: var(--yellow);
+	border-radius: 50%;
+	/*clip-path: circle(50% at 50% 50%);*/
+}
+
+.star-minda {
+	position: absolute;
+	bottom: 39px;
+	left: 13px;
+	background-color: var(--yellow);
+	width: 50px;
+	height: 50px;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	transform: rotate(-6deg);
+}
+
+.star-vi {
+	position: absolute;
+	top: 202px;
+	left: 297px;
+	background-color: var(--yellow);
+	width: 50px;
+	height: 50px;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	transform: rotate(18deg);
+}
+
+.star-luz {
+	position: absolute;
+	top: 39px;
+	left: 13px;
+	background-color: var(--yellow);
+	width: 50px;
+	height: 50px;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	transform: rotate(42deg);
+}
+
+.rays {
+	position: absolute;
+	top: 132px;
+	left: 125.35px;
+}
+
+.ray-container {
+	position: absolute;
+}
+
+.ray-container:nth-child(2) {
+	transform: rotate(45deg);
+}
+
+.ray-container:nth-child(3) {
+	transform: rotate(-45deg);
+}
+
+.ray-container:nth-child(4) {
+	transform: rotate(90deg);
+}
+
+.ray {
+	position: relative;
+	width: 33.3px;
+	height: 190px;
+	background-color: var(--yellow);
+	clip-path: polygon(33.33% 2.92%, 50% 0%, 66.67% 2.92%, 50% 50%, 66.67% 97.08%, 50% 100%, 33.33% 97.08%, 50% 50%, 0% 8.76%, 16.67% 5.84%, 50% 50%, 83.33% 5.84%, 100% 8.76%, 50% 50%, 0% 91.24%, 16.67% 94.16%, 50% 50%, 83.33% 94.16%, 100% 91.24%, 50% 50%);
+}
+
